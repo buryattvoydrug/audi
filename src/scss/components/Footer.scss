@@ -1,0 +1,55 @@
+@import '../Main.scss';
+footer{
+  padding: 100px 190px 20px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $dark;
+  .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    .to-top{
+      background: none;
+      border:none;
+    }
+    .copyright{
+      color:$white;
+      font-family: normal;
+      font-size: 14px;
+    }
+    .social{
+      width: 220px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+@media screen and (max-width:1023px){
+  footer{
+    height: 540px;
+    padding: 85px 25px 30px; 
+    .footer-container{
+      flex-direction: column;
+      align-items: flex-start;
+      .nav__item{
+        padding: 10px 0;
+      }
+      .copyright{
+        margin-top: 20px;
+      }
+      .social{
+        width: 100%;
+        img{
+          width: 50px;
+        }
+      }
+    }
+    .footer-container:last-child{
+      flex-direction: column-reverse;
+    }
+  }
+}

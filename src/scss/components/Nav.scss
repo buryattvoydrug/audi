@@ -1,0 +1,16 @@
+@import '../Main.scss';
+.nav__item{
+  font-family: extendedbold;
+  font-size: 22px;
+  color:$white;
+}
+.nav__item:hover{
+  transition: .6 all;
+  text-shadow: 0px 4px 25px rgba(255, 255, 255, 0.46);
+  transform: scale(1.2);
+}
+@media screen and (max-width:1023px){
+  .nav__item{
+    font-size: 26px;
+  }
+}

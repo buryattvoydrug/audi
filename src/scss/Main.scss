@@ -11,9 +11,11 @@ $bg:linear-gradient(180deg, #EBEDEE 0%, rgba(251, 251, 251, 0) 100%), #FFFFFF;
 li{
   list-style-type: none;
 }
-a,a:visited{
-  color:inherit;
+a{
   text-decoration: none;
+}
+a:visited{
+  color:inherit;
 }
 .container{
   height: 100vh;

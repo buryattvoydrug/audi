@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Home from "./components/pages/Home";
 import Technic from "./components/pages/Technic";
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Home/>
       <Technic/> 
+      <Footer/>
     </>
   );
 }
