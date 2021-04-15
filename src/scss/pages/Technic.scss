@@ -1,0 +1,97 @@
+@import '../Main.scss';
+.technic-page{
+  .technic{
+    padding-bottom: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .technic__block{
+      max-width:550px;
+      .technic__title{
+        font-family: extendedbold;
+        font-size: 36px;
+        color:$dark;
+      }
+      .technic__text{
+        font-family: widelight;
+        font-size: 18px;
+        color:$dark;
+        margin: 25px 0 125px;
+      }
+      .technic__logo img{
+        width: 150px;
+      }
+    }
+    .technic__numbers{
+      hr{
+        background:$dark;
+      }
+      .numbers__item{
+        margin: 35px 0;
+        width: 450px;
+        .number{
+          font-family: widelight;
+          font-size: 18px;
+          color:$dark;
+          strong{
+            font-family: widebold;
+            font-size: 72px;
+            color:$dark;
+            margin-right: 5px;
+          }
+        }
+        .number__subtitle{
+          font-family: widebold;
+          font-size: 22px;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1023px){
+  .technic-page{
+    .container{
+      height: auto;
+      .technic{
+        padding-top: 110px;
+        position: relative;
+        height: auto;
+        flex-direction: column;
+        .technic__block{
+          max-width:100%;
+          .technic__title{
+            font-size: 22px;
+          }
+          .technic__text{
+            margin: 20px 0 90px;
+          }
+          .technic__logo{
+            position: absolute;
+            top:0;
+            img{
+              width: 90px;
+            }
+          }
+        }
+        .technic__numbers{
+          .numbers__item{
+            margin: 30px 0;
+            width: 100%;
+            .number{
+              font-size: 14px;
+              strong{
+                font-size: 48px;
+              }
+            }
+            .number__subtitle{
+              font-size: 16px;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

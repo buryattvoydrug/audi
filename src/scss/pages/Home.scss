@@ -1,0 +1,69 @@
+@import '../Main';
+.home-page{
+  background: url(../../images/quattro.svg),url(../../images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    .home__title{
+      margin-bottom: -35px;
+      font-family: extendedbold;
+      font-size: 146px;
+      color:$dark;
+    }
+    .home-buttons{
+      margin-left: 60px;
+      .home__button{
+        font-family: normal;
+        font-size: 18px;
+        padding: 20px 50px;
+        border: 1px solid #13272E;
+        background:transparent;
+        color:$dark;
+        margin-right: 10px;
+      }
+      .dark__button{
+        background: $dark;
+        color: $white;
+      }
+    }
+  }
+}
+@media (min-width:1024px) and (max-width:1365px){
+  .home-page{
+    .container{
+      .home__title{
+        margin-bottom: -25px;
+        font-size: 100px;
+      }
+      .home-buttons{
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width:1023px){
+  .home-page{
+    .container{
+      flex-direction: column;
+      justify-content: flex-end;
+      .home__title{
+        font-size: 15vw;
+        margin-bottom: 0;
+      }
+      .home-buttons{
+        width: 100%;
+        .home__button{
+          font-size: 14px;
+          margin: 5px 0 0 0;
+          padding: 14px auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
