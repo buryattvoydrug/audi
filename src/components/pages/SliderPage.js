@@ -2,10 +2,10 @@ import React from 'react'
 
 import '../../scss/pages/SliderPage.scss'
 
-function SliderPage() {
+function SliderPage({type}) {
   return (
     <>
-      <section className="slider-page">
+      <section className={'slider-page slider-page_' + type}>
         <div className="slider-block">
           <div className="text-block">
             <h3 className="slider__title">Zukunftsweisende Designikone</h3>

@@ -27,6 +27,7 @@
   }
   .desert{
     z-index: 1;
+    min-width: 100%;
     object-fit: cover;
   }
   .desert:before{
