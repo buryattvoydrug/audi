@@ -1,5 +1,6 @@
 import Footer from "./components/Footer";
 import Home from "./components/pages/Home";
+import SliderPage from "./components/pages/SliderPage";
 import Technic from "./components/pages/Technic";
 
 
@@ -9,6 +10,7 @@ function App() {
       <Home/>
       <Technic/> 
       <Footer/>
+      <SliderPage/>
     </>
   );
 }

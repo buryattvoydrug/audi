@@ -1,0 +1,119 @@
+@import '../Main.scss';
+.slider-page{
+  position: relative;
+  .slider-block{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    .text-block{
+      padding: 200px 100px 0 100px;
+      max-width: 600px;
+      .slider__text{
+        margin-top: 22px;
+      }
+    }
+    .image__item{
+      height: 100vh;
+      
+    }
+  }
+  .slider-numbers{
+    position: absolute;
+    left:100px;
+    bottom:60px;
+    .number{
+      background: none;
+      border:none;
+      margin-right: 22px;
+    }
+  }
+
+
+  //fonts
+  .slider__title{
+    font-family: extendedbold;
+    font-size: 24px;
+  }
+  .slider__text{
+    font-family: widelight;
+    font-size: 20px;
+    margin-top: 22px;
+  }
+  .number{
+    font-family: normal;
+    font-size: 22px;
+  }
+}
+.slider-page_left{
+  .slider-block{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+.slider-page_bottom{
+  .slider-block{
+    flex-direction: column-reverse;
+    .image__item{
+      height: 66vh;
+      width: auto;
+      object-fit:cover;
+    }
+    .text-block{
+      padding-top: 60px;
+      max-width:70%;
+    }
+  }
+}
+@media (max-width:1365px){
+  .slider-page{
+    //fonts
+    .slider__title{
+      font-size: 22px;
+    }
+    .slider__text{
+      font-size:18px;
+    }
+    .number{
+      font-size: 32px;
+    }
+  }
+}
+@media (min-width:1699px){
+  .slider-page{
+    .slider-block{
+      .text-block{
+        max-width:700px;
+      }
+    }
+    //fonts
+    .slider__title{
+      font-size: 28px;
+    }
+    .slider__text{
+      font-size:24px;
+    }
+  }
+}
+@media screen and (max-width:1023px){
+  .slider-page{
+    .slider-block{
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      .image__item{
+        height: auto;
+        flex-grow: 1;
+        object-fit: cover;
+      }
+      .text-block{
+        height: auto;
+        padding: 40px 15px 120px;
+      }
+    }
+    .slider-numbers{
+      left:15px;
+      bottom:30px;
+    }
+  }
+}
