@@ -5,7 +5,6 @@ import '../../scss/components/Nav.scss'
 
 function Navbar() {
   const [active,setActive]=useState(0)
-  console.log(active)
   return (
     <>
       <section className="navbar-page">
