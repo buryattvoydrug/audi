@@ -1,13 +1,16 @@
 import React from 'react'
-import Nav from './Nav'
 
 import '../scss/components/Footer.scss'
+import '../scss/components/Nav.scss'
 
 function Footer() {
   return (
     <footer>
       <div className="footer-container">
-        <Nav/>
+      <div  className="nav__item">Exterior</div>
+      <div  className="nav__item">Interior</div>  
+      <div  className="nav__item">Technic</div>  
+      <div  className="nav__item">Preferernces</div>
         <button className="to-top nav__item" >Home</button>
       </div>
       <div className="footer-container">

@@ -6,11 +6,13 @@ import Technic from "./components/pages/Technic";
 import {isMobile} from 'react-device-detect'
 import TextPage from "./components/pages/TextPage";
 import ConfigPage from "./components/pages/ConfigPage";
+import Navbar from "./components/pages/Navbar";
 
 function App() {
   return (
     <>
       <Home/>
+      <Navbar/>
       <ConfigPage/>
       <Parallax videoUrl={"/images/exterior.mp4"} 
       maskUrl={isMobile? "/images/iPhone 11 Pro Max - 2.png" : "/images/exterior.png"} />

@@ -30,24 +30,24 @@ function ConfigPage() {
           <img className='car' src={"/images/config/" + col + felgen +  "1.jpg"} alt=""/>
           <div className="choice-block">
             <div className="type-labels">
-              <div onClick={changeChoice} data-index={1} className={choice==1? 'active_choice type__label' : 'type__label'}>Цвет</div>
-              <div onClick={changeChoice} data-index={2} className={choice==2? 'active_choice type__label' : 'type__label'}>Диски</div>
+              <div onClick={changeChoice} data-index={1} className={choice===1? 'active_choice type__label' : 'type__label'}>Цвет</div>
+              <div onClick={changeChoice} data-index={2} className={choice===2? 'active_choice type__label' : 'type__label'}>Диски</div>
             </div>
-            {choice == 1? 
+            {choice === 1? 
               <div className="colors">
                 {colors.map((n,i)=>(
-                    <img onClick={changeColor} className={col==i+1? 'active_color' : ''} data-index={i+1} title={colors[i].title} src={colors[i].iconSrc} alt=""/>
+                    <img onClick={changeColor} key={i} className={col===i+1? 'active_color' : ''} data-index={i+1} title={colors[i].title} src={colors[i].iconSrc} alt=""/>
                 ))}
               </div>
             : 
               <div className="felgen">
               {felgenItems.map((n,i)=>(
-                    <img onClick={changeFelgen} className={felgen==i+1? 'active_felgen' : ''} data-index={i+1} title={felgenItems[i].title} src={felgenItems[i].iconSrc} alt=""/>
+                    <img onClick={changeFelgen} key={i} className={felgen===i+1? 'active_felgen' : ''} data-index={i+1} title={felgenItems[i].title} src={felgenItems[i].iconSrc} alt=""/>
                 ))}
               </div>
             }
             <div className="description">
-              {choice == 1? colors[col-1].title : felgenItems[felgen-1].title}
+              {choice === 1? colors[col-1].title : felgenItems[felgen-1].title}
             </div>
           </div>
         </div>

@@ -1,0 +1,40 @@
+@import '../Main.scss';
+.navbar-page{
+  width: 100%;
+  height: 100vh;
+  background:black;
+  display: flex;
+  align-items: center;
+  padding-left: 15%;
+  nav{
+    .nav__item{
+      font-size: 48px;
+      padding: 15px 0;
+      transition: all .7s;
+      cursor: pointer;
+    }
+  }
+  .menu__image{
+    position: absolute;
+    right:0;
+    height: 100%;
+  }
+}
+@media screen and (max-width:1023px){
+  .navbar-page{
+    position: relative;
+    padding-bottom: 65%;
+    nav{
+      .nav__item{
+        font-size: 28px;
+      }
+    }
+    .menu__image{
+      position: absolute;
+      bottom: 0;
+      height: 40%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
