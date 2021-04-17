@@ -15,7 +15,6 @@ const TabContent = ({title,image,text})=>(
 )
 
 function SliderPage({type,items}) {
-  console.log(items[0].text)
   const [active,setActive]=useState(0)
   const openTab = (e) => setActive(+e.target.dataset.index)
   return (

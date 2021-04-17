@@ -1,0 +1,55 @@
+@import '../Main.scss';
+.config-page{
+  width: 100%;
+  height: 100vh;
+  .config__title{
+    padding: 50px 0 10px 100px;
+    font-family: extendedbold;
+    font-size: 64px;
+  }
+  .config__text{
+    padding: 0 0 0 100px;
+    font-family: normal;
+    font-size: 22px;
+    width: 70%;
+  }
+  .config-block{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .car{
+      height: 375px;
+    }
+    .choice-block{
+      .type-labels{
+        display: flex;
+        justify-content: center;
+        .type__label{
+          margin: 10px 5px;
+          font-family: widelight;
+          font-size: 18px;
+        }
+      }
+      .colors,.felgen{
+        height: 50px;
+        img{
+          height: 100%;
+        }
+        img:hover{
+          transition: all .5s;
+          transform: scale(1.1);
+        }
+      }
+      .description{
+        font-family: widelight;
+        font-size: 14px;
+        display: flex;
+        margin-top: 5px;
+        justify-content: center;
+      }
+    }
+    
+  }
+}

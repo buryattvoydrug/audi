@@ -1,0 +1,32 @@
+@import '../Main.scss';
+.text-page{
+  width: 100%;
+  height: 100vh;
+  padding: 10%;
+  background:#000;
+  .text-page__title{
+    font-family: extendedbold;
+    font-size: 64px;
+    width: 70%;
+    color:$white;
+  }
+  .text-page__text{
+    margin-top: 30px;
+    font-family: widelight;
+    font-size: 24px;
+    width: 90%;
+    color:$white;
+
+  }
+}
+@media screen and (max-width:1023px) {
+  .text-page{
+    padding-top: 90px;
+    .text-page__text{
+      font-size: 16px;
+    }
+    .text-page__title{
+      font-size: 32px;
+    }
+  }  
+}

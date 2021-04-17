@@ -4,16 +4,21 @@ import Parallax from "./components/Parallax";
 import SliderPage from "./components/pages/SliderPage";
 import Technic from "./components/pages/Technic";
 import {isMobile} from 'react-device-detect'
+import TextPage from "./components/pages/TextPage";
+import ConfigPage from "./components/pages/ConfigPage";
 
 function App() {
   return (
     <>
       <Home/>
+      <ConfigPage/>
       <Parallax videoUrl={"/images/exterior.mp4"} 
       maskUrl={isMobile? "/images/iPhone 11 Pro Max - 2.png" : "/images/exterior.png"} />
+      <TextPage content={textPages} number={0}/>
       <SliderPage items={exteriorItems} type={'right'}/>
       <Parallax videoUrl={"/images/video.mp4"}
       maskUrl={isMobile? "/images/iPhone 11 Pro Max - 1.png" : "/images/design.png"} />
+      <TextPage content={textPages} number={1}/>
       <SliderPage items={interiorItems} type={'left'}/>
       <Parallax videoUrl={"/images/video.mp4"} noblur/>
       <Technic/>
@@ -60,5 +65,15 @@ const prefItems =[
     image:'/images/pref_slide3.jpg',
     text:' bündelt einen Vertrag, eine Karte, einen Zugang – über Landesgrenzen hinweg. So stehen mehr als 200.000 Ladepunkte in 26 europäischen Ländern für das Laden unterwegs zur Verfügung. ' },
 ];
+const textPages=[
+  {
+    title:'Die Eckdaten: vier Türen, fünf Sitzplätze',
+    text:'Der Audi e-tron GT quattro2 demonstriert Fortschritt auf zeitgemäße Art und Weise. Er strahlt Sportlichkeit, Hochwertigkeit und Komfort zugleich aus. Die Sportsitze plus vorn mit integrierten Kopfstützen bieten durch ausgeprägte Sitzseitenwangen einen guten Seitenhalt in Kurven und bei sportlicher Fahrweise.'
+  },
+  {
+    title:'Die konsequente Neuinterpretation von quattro',
+    text:'Der vollvariable quattro Antrieb in Verbindung mit dem elektrischen Antriebssystem sorgt für eine intelligente Kraftverteilung zwischen den einzelnen Rädern. Bei guten Traktionsverhältnissen wird primär die Vorderachse angetrieben.'
+  },
+]
 
 export default App;
