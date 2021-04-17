@@ -16,7 +16,8 @@
     }
     .image__item{
       height: 100vh;
-      
+      max-width:900px;
+      object-fit:cover ;
     }
   }
   .slider-numbers{
@@ -63,13 +64,18 @@
     justify-content: flex-end;
     .image__item{
       height: 66vh ;
+      max-width:100%;
       width: auto ;
-      object-fit:cover ;
     }
     .text-block{
       padding-top: 60px ;
       max-width:70% ;
     }
+  }
+  .slider-numbers{
+    left:auto;
+    right:100px;
+    bottom:60px;
   }
 }
 @media (max-width:1365px){
@@ -113,6 +119,7 @@
         object-fit: cover;
       }
       .text-block{
+        max-width: 100%;
         height: auto;
         padding: 40px 15px 120px;
       }
