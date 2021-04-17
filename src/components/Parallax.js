@@ -4,11 +4,11 @@ import BackdropFilter from "react-backdrop-filter";
 
 import '../scss/pages/Parallax.scss'
 
-function Parallax({videoUrl,maskUrl}) {
-  const [offsetY,setOffsetY]=useState(0);
+function Parallax({videoUrl,maskUrl,noblur}) {
+  // const [offsetY,setOffsetY]=useState(0);
   const [pos,setPos]=useState(0);
   const handleScroll = () => {
-    setOffsetY(window.pageYOffset);
+    // setOffsetY(window.pageYOffset);
     setPos(ref.current.getBoundingClientRect().y)
   }
   const ref = useRef();
@@ -21,9 +21,7 @@ function Parallax({videoUrl,maskUrl}) {
     posa=pos
     if(blur<0){blur=0}
   }
-  console.log(pos)
   useEffect(() => {
-    
     window.addEventListener('scroll',handleScroll);
     return () => window.removeEventListener('scroll',handleScroll);
   }, [])
@@ -31,13 +29,15 @@ function Parallax({videoUrl,maskUrl}) {
   return (
     <>
       <section ref={ref} className="parallax-page" >
-        <div className="parallax-container" style={{transform: `translateY(${-posa}px)`}}>
+      {/* style={{transform: `translateY(${-posa}px)`}} */}
+        <div className="parallax-container" >
+          {noblur? null:
           <div className="mask" style={{transform: `scale(${scaleNum})`}}>
             <BackdropFilter 
             filter={`blur(${blur}px)`} >
               <img src={maskUrl} alt="" style={{opacity: `${blur+0.5}`}} />
             </BackdropFilter>
-          </div>
+          </div>}
             <video className="desert"  autoPlay loop muted>
               <source src={videoUrl} type="video/mp4"/>
             </video>

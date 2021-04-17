@@ -1,26 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import '../../scss/pages/SliderPage.scss'
 
-function SliderPage({type}) {
+const TabContent = ({title,image,text})=>(
+  <div className="slider-block">
+        <div className="text-block">
+          <h3 className="slider__title">{title}</h3>
+          <div className="slider__text">
+          {text}
+          </div>
+        </div>
+        <img className="image__item" src={image} alt=""/>
+      </div>
+)
+
+function SliderPage({type,items}) {
+  console.log(items[0].text)
+  const [active,setActive]=useState(0)
+  const openTab = (e) => setActive(+e.target.dataset.index)
   return (
     <>
       <section className={'slider-page slider-page_' + type}>
-        <div className="slider-block">
-          <div className="text-block">
-            <h3 className="slider__title">Zukunftsweisende Designikone</h3>
-            <div className="slider__text">
-              Das Design des Audi e-tron GT quattro ist die konsequente Verkörperung elektrischer Mobilität und unverwechselbarer Audi DNA.
-            </div>
-          </div>
-          <img className="image__item" src="/images/slider1.png" alt=""/>
-        </div>
-        <div className="slider-numbers">
-          <button className="number">1</button>
-          <button className="number">2</button>
-          <button className="number">3</button>
-          <button className="number">4</button>
-        </div>
+      <div className="slider-numbers">
+        {items.map((n,i)=>(
+          <button className="number" onClick={openTab} data-index={i} >{i+1}</button>
+        ))}
+      </div>
+      {items[active] && 
+        <TabContent {...items[active]} />
+      }
       </section>
     </>
   )

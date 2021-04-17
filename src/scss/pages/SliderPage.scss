@@ -51,19 +51,24 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
   }
+  .slider-numbers{
+    left:auto;
+    right:100px;
+    bottom:60px;
+  }
 }
 .slider-page_bottom{
   .slider-block{
-    flex-direction: column-reverse !important;
+    flex-direction: column-reverse;
     justify-content: flex-end;
     .image__item{
-      height: 66vh !important;
-      width: auto !important;
-      object-fit:cover !important;
+      height: 66vh ;
+      width: auto ;
+      object-fit:cover ;
     }
     .text-block{
-      padding-top: 60px !important;
-      max-width:70% !important;
+      padding-top: 60px ;
+      max-width:70% ;
     }
   }
 }
