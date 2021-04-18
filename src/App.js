@@ -8,6 +8,11 @@ import TextPage from "./components/pages/TextPage";
 import ConfigPage from "./components/pages/ConfigPage";
 
 function App() {
+
+  
+
+
+
   return (
     <>
       <Home/>
@@ -21,7 +26,7 @@ function App() {
       <TextPage content={textPages} number={1}/>
       <SliderPage items={interiorItems} type={'left'}/>
       <Parallax videoUrl={"/images/video.mp4"} noblur/>
-      <Technic id="technic"/>
+      <Technic id="technic" />
       <SliderPage items={prefItems} type={'bottom'}/>
       <Footer/>
       
