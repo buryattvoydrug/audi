@@ -32,49 +32,49 @@ function App() {
 }
 
 const exteriorItems =[
-  { title:'Ausdrucksstarke Akzente',
+  { title:'Выразительные акценты',
     image:'/images/ext_slide1.webp',
-    text:'Aerodynamisch optimierte Formen werden zu funktionalen Details. Von den intelligenten Lufteinlässen in der Front über die luftdurchströmten Radhäuser bis hin zu dem prägnanten Heckdiffusor.' },
-  { title:'Leuchtendes Statement',
+    text:'Оптимизированные аэродинамические формы становятся функциональными деталями. От интеллектуальных воздухозаборников в передней части до колесных арок с эффектным воздушным потоком и впечатляющего заднего диффузора.' },
+  { title:'Яркое заявление',
     image:'/images/ext_slide2.jpg',
-    text:'Die optionalen Matrix LED-Scheinwerfer mit Audi Laserlicht sind elementarer Bestandteil einer progressiven Designsprache. Ein unverwechselbares Statement ist die markante Lichtsignatur mit dem blauen X-Element des Audi Laserlichts.' },
-  { title:'Animiertes Leuchtenband',
+    text:'Опциональные светодиодные фары Matrix с лазерным лучом Audi являются неотъемлемой частью языка прогрессивного дизайна. Яркая световая подпись в виде синего X-элемента лазерного фонаря Audi является безошибочным заявлением.' },
+  { title:'Анимированная полоса огней',
     image:'/images/ext_slide3.webp',
-    text:'Über die gesamte Breite des Hecks verläuft ein animiertes Leuchtenband, das an den Außenkanten, in den eigentlichen Leuchteinheiten, von einzelnen keilförmigen LED-Segmenten begrenzt wird.' },
+    text:'Анимированная полоса огней проходит по всей ширине кормы и ограничена отдельными клиновидными сегментами светодиодов на внешних краях реальных осветительных устройств.' },
 ];
 const interiorItems =[
-  { title:'Digitalisierung maßgeschneidert:',
+  { title:'Мультимедиа система:',
     image:'/images/int_slide1.webp',
-    text:'Navigieren, kommunizieren, informieren oder das umfangreiche Infotainment-Angebot genießen. Mit einem Bedienkonzept, das fasziniert.' },
-  { title:'Die automobile Moderne:',
+    text:'Перемещайтесь, общайтесь, информируйте или наслаждайтесь обширным предложением информационно-развлекательной системы. С захватывающей концепцией управления.' },
+  { title:'Современный автомобиль:',
     image:'/images/int_slide2.jpg',
-    text:'Die Designer haben sich für den konsequenten Einsatz ressourcenschonender Materialien entschieden. Ein Beispiel: komplett lederfreies Interieur. ' },
-  { title:'Faszinierendes Bedienkonzept:',
+    text:'Дизайнеры сделали ставку на последовательное использование ресурсосберегающих материалов. Пример: салон полностью без кожи. ' },
+  { title:'Увлекательная концепция управления:',
     image:'/images/int_slide3.webp',
-    text:'Das funktionale Zentrum befindet sich vorn, sichtbar auf den Fahrer fokussiert, eingerahmt von Mittelkonsole und Cockpit mit komfortablem Touchscreen.' },
-  { title:'Hintere Sitzreihe:',
+    text:'Функциональный центр расположен спереди, явно ориентированный на водителя, обрамленный центральной консолью и кабиной с удобным сенсорным экраном.' },
+  { title:'Задний ряд сидений:',
     image:'/images/int_slide4.webp',
-    text:'Die ausgeprägten äußeren Fondsitze mit einer zusätzlichen, mittigen Sitzmöglichkeit unterstreichen den sportlichen Charakter.' },
+    text:'Ярко выраженные крайние задние сиденья с дополнительным центральным сиденьем подчеркивают спортивный характер.' },
 ];
 const prefItems =[
-  { title:'Schnelles Laden',
+  { title:'Быстрая зарядка',
     image:'/images/pref_slide1.jpg',
-    text:'Seine Performance zeigt der Audi e-tron GT quattro auch beim Laden: an 800-Volt-Ladesäulen mit bis zu 270 kW – serienmäßig. In ca. 5 Minuten kann Energie für die nächsten 100 km geladen werden. In ungefähr 22,5 Minuten ist die Batterie bereits wieder von 5 % zu ca. 80 % geladen.' },
-  { title:'Laden zu Hause',
+    text:'Audi e-tron GT quattro также демонстрирует свои характеристики при зарядке: на зарядных станциях на 800 вольт и мощностью до 270 кВт - в стандартной комплектации. Энергию можно зарядить на следующие 100 км примерно за 5 минут. Примерно через 22,5 минуты аккумулятор уже снова заряжается с 5% до примерно 80%.' },
+  { title:'Зарядка дома',
     image:'/images/pref_slide2.jpg',
-    text:'Der Audi e-tron GT quattro kann serienmäßig mit bis zu 11 kW maximaler Wechselstrom-Ladeleistung (AC) geladen werden. Für das schnellere Laden mit 22 kW zu Hause ist das optionale e-tron Ladesystem connect in Verbindung mit dem optionalen On-board-Ladegerät bis 22 kW (AC) erforderlich.' },
-  { title:'Laden unterwegs: ',
+    text:'Audi e-tron GT quattro в стандартной комплектации может заряжаться максимальной мощностью до 11 кВт переменного тока. Для более быстрой зарядки дома мощностью 22 кВт требуется дополнительная система зарядки e-tron, подключаемая вместе с дополнительным бортовым зарядным устройством до 22 кВт (переменного тока).' },
+  { title:'Зарядка в пути: ',
     image:'/images/pref_slide3.jpg',
-    text:' bündelt einen Vertrag, eine Karte, einen Zugang – über Landesgrenzen hinweg. So stehen mehr als 200.000 Ladepunkte in 26 europäischen Ländern für das Laden unterwegs zur Verfügung. ' },
+    text:' В 26 странах Европы для зарядки на ходу доступно более 200 000 пунктов зарядки. ' },
 ];
 const textPages=[
   {
-    title:'Die Eckdaten: vier Türen, fünf Sitzplätze',
-    text:'Der Audi e-tron GT quattro2 demonstriert Fortschritt auf zeitgemäße Art und Weise. Er strahlt Sportlichkeit, Hochwertigkeit und Komfort zugleich aus. Die Sportsitze plus vorn mit integrierten Kopfstützen bieten durch ausgeprägte Sitzseitenwangen einen guten Seitenhalt in Kurven und bei sportlicher Fahrweise.'
+    title:'Основные данные: четыре двери, пять мест.',
+    text:'Audi e-tron GT quattro2 демонстрирует современный прогресс. Он сочетает в себе спортивность, качество и комфорт одновременно. Спортивные передние сиденья Plus со встроенными подголовниками обеспечивают хорошую боковую поддержку благодаря выраженным боковым валикам сидений при поворотах и ​​при спортивном вождении.'
   },
   {
-    title:'Die konsequente Neuinterpretation von quattro',
-    text:'Der vollvariable quattro Antrieb in Verbindung mit dem elektrischen Antriebssystem sorgt für eine intelligente Kraftverteilung zwischen den einzelnen Rädern. Bei guten Traktionsverhältnissen wird primär die Vorderachse angetrieben.'
+    title:'Последовательное переосмысление quattro',
+    text:'Полностью регулируемый привод quattro в сочетании с системой электропривода обеспечивает интеллектуальное распределение мощности между отдельными колесами. Если есть хорошее сцепление с дорогой, в первую очередь приводится передний мост.'
   },
 ]
 

@@ -22,19 +22,19 @@ function Navbar() {
 
 const navItems=[
   {
-    name:'Exterior',
+    name:'Экстерьер',
     imageUrl:'/images/menu/1.png'
   },
   {
-    name:'Interior',
+    name:'Интерьер',
     imageUrl:'/images/menu/2.png'
   },
   {
-    name:'Technic',
+    name:'Техника',
     imageUrl:'/images/menu/3.png'
   },
   {
-    name:'Preferernces',
+    name:'Особенности',
     imageUrl:'/images/menu/4.png'
   },
 ];

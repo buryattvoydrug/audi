@@ -9,9 +9,9 @@ function Technic() {
         <div className="container">
           <div className="technic">
             <div className="technic__block">
-              <h2 className="technic__title">Laden in neuer Dimension</h2>
+              <h2 className="technic__title">Загрузка в новом измерении</h2>
               <div className="technic__text">
-              Die flach in den Unterboden integrierte 800-Volt-Lithium-Ionen-Batterie verfügt über eine außergewöhnlich hohe Performance – beim Laden und beim Antrieb. In Verbindung mit dem Rekuperationssystem wurden bis zu 488 km Reichweite nach dem Messverfahren WLTP ermittelt (Stromverbrauch kombiniert1 in kWh/100 km: 19,6–18,8 (NEFZ); 21,6–19,9 (WLTP); CO₂-Emissionen kombiniert1 in g/km: 0. Angaben zu den Stromverbräuchen und CO₂-Emissionen bei Spannbreiten in Abhängigkeit von der gewählten Ausstattung des Fahrzeugs).
+              Литий-ионный аккумулятор на 800 В, встроенный в нижнюю часть кузова, обеспечивает исключительно высокий уровень производительности - как при зарядке, так и во время движения. В сочетании с системой рекуперации запас хода до 488 км был определен с использованием метода измерения WLTP (комбинированное энергопотребление1 в кВтч / 100 км: 19,6–18,8 (NEDC); 21,6–19,9 (WLTP); выбросы CO₂, комбинированные1 в г / км: 0. Информация о потребляемой мощности и выбросах CO₂ в диапазонах в зависимости от выбранной комплектации автомобиля).
               </div>
               <div className="technic__logo">
                 <img src="/images/audi logo.svg" alt=""/>
@@ -20,28 +20,28 @@ function Technic() {
             <div className="technic__numbers">
               <div className="numbers__item">
                 <div className="number">
-                  <strong>5</strong>Min.
+                  <strong>5</strong>Мин.
                 </div>
                 <div className="number__subtitle">
-                  Energie für 100 km geladen in ca.
+                Энергия на 100 км заряжается за
                 </div>
               </div>
               <hr/>
               <div className="numbers__item">
                 <div className="number">
-                  <strong>22,5</strong>Min.
+                  <strong>22,5</strong>Мин.
                 </div>
                 <div className="number__subtitle">
-                Batterie von 5 % zu 80 % aufgeladen in
+                Аккумулятор заряжается с 5% до 80% за
                 </div>
               </div>
               <hr/>
               <div className="numbers__item">
                 <div className="number">
-                  <strong>488</strong>Min.
+                  <strong>488</strong>Мин.
                 </div>
                 <div className="number__subtitle">
-                  Reichweite (WLTP) bis zu
+                  Диапазон (WLTP) до
                 </div>
               </div>
             </div>

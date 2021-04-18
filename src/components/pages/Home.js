@@ -11,8 +11,8 @@ function Home() {
         <Header />
           <h1 className="home__title">e-tron GT</h1>
           <div className="home-buttons">
-            <button className="home__button dark__button">Configurate</button>
-            <button className="home__button transp__button">Exterior</button>
+            <button className="home__button dark__button">Конфигуратор</button>
+            <button className="home__button transp__button">Экстерьер</button>
           </div>
         </div>
       </section>
