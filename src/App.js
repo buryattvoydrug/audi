@@ -6,24 +6,22 @@ import Technic from "./components/pages/Technic";
 import {isMobile} from 'react-device-detect'
 import TextPage from "./components/pages/TextPage";
 import ConfigPage from "./components/pages/ConfigPage";
-import Navbar from "./components/pages/Navbar";
 
 function App() {
   return (
     <>
       <Home/>
-      <Navbar/>
-      <ConfigPage/>
-      <Parallax videoUrl={"/images/exterior.mp4"} 
+      <ConfigPage />
+      <Parallax videoUrl={"/images/exterior.mp4"} type={'exterior'}
       maskUrl={isMobile? "/images/iPhone 11 Pro Max - 2.png" : "/images/exterior.png"} />
       <TextPage content={textPages} number={0}/>
       <SliderPage items={exteriorItems} type={'right'}/>
-      <Parallax videoUrl={"/images/video.mp4"}
+      <Parallax videoUrl={"/images/video.mp4"} type={'interior'}
       maskUrl={isMobile? "/images/iPhone 11 Pro Max - 1.png" : "/images/design.png"} />
       <TextPage content={textPages} number={1}/>
       <SliderPage items={interiorItems} type={'left'}/>
       <Parallax videoUrl={"/images/video.mp4"} noblur/>
-      <Technic/>
+      <Technic id="technic"/>
       <SliderPage items={prefItems} type={'bottom'}/>
       <Footer/>
       
@@ -73,7 +71,7 @@ const textPages=[
     text:'Audi e-tron GT quattro2 демонстрирует современный прогресс. Он сочетает в себе спортивность, качество и комфорт одновременно. Спортивные передние сиденья Plus со встроенными подголовниками обеспечивают хорошую боковую поддержку благодаря выраженным боковым валикам сидений при поворотах и ​​при спортивном вождении.'
   },
   {
-    title:'Последовательное переосмысление quattro',
+    title:'Новые технологии quattro',
     text:'Полностью регулируемый привод quattro в сочетании с системой электропривода обеспечивает интеллектуальное распределение мощности между отдельными колесами. Если есть хорошее сцепление с дорогой, в первую очередь приводится передний мост.'
   },
 ]

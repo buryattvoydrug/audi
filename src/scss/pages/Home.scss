@@ -17,7 +17,9 @@
     }
     .home-buttons{
       margin-left: 60px;
+      display: flex;
       .home__button{
+        display: block;
         font-family: normal;
         font-size: 18px;
         padding: 20px 50px;
@@ -56,12 +58,13 @@
         margin-bottom: 0;
       }
       .home-buttons{
+        flex-direction: column;
         width: 100%;
         .home__button{
           font-size: 14px;
           margin: 5px 0 0 0;
-          padding: 14px auto;
           width: 100%;
+          text-align: center;
         }
       }
     }

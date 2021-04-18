@@ -21,7 +21,7 @@ function ConfigPage() {
 
   return (
     <>
-      <section className="config-page">
+      <section className="config-page" id="config">
         <h1 className="config__title">Подберите цвет и диски</h1>
         {isMobile? null:
           <div className="config__text">Объедините различные краски и колеса вместе, создавая новый Audi e-tron GT quattro в соответствии с вашими предпочтениями.</div>

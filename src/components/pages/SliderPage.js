@@ -19,7 +19,7 @@ function SliderPage({type,items}) {
   const openTab = (e) => setActive(+e.target.dataset.index)
   return (
     <>
-      <section className={'slider-page slider-page_' + type}>
+      <section className={'slider-page slider-page_' + type} id={type==='bottom'? 'prefs' : ''}>
       <div className="slider-numbers">
         {items.map((n,i)=>(
           <button className="number" onClick={openTab} data-index={i} >{i+1}</button>

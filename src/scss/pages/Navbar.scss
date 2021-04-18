@@ -1,17 +1,28 @@
 @import '../Main.scss';
 .navbar-page{
   width: 100%;
+  position: absolute;
+  top:0;
+  z-index: 5;
   height: 100vh;
   background:black;
   display: flex;
   align-items: center;
   padding-left: 15%;
+  .close{
+    z-index: 6;
+    position: absolute;
+    right:0;
+    top:0;
+    border:10px solid black;
+  }
   nav{
     .nav__item{
       font-size: 48px;
       padding: 15px 0;
       transition: all .7s;
       cursor: pointer;
+      display: block;
     }
   }
   .menu__image{

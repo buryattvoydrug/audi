@@ -4,7 +4,7 @@ import BackdropFilter from "react-backdrop-filter";
 
 import '../scss/pages/Parallax.scss'
 
-function Parallax({videoUrl,maskUrl,noblur}) {
+function Parallax({videoUrl,maskUrl,noblur,type}) {
   // const [offsetY,setOffsetY]=useState(0);
   const [pos,setPos]=useState(0);
   const handleScroll = () => {
@@ -28,8 +28,7 @@ function Parallax({videoUrl,maskUrl,noblur}) {
 
   return (
     <>
-      <section ref={ref} className="parallax-page" >
-      {/* style={{transform: `translateY(${-posa}px)`}} */}
+      <section ref={ref} className="parallax-page"  id={type}>
         <div className="parallax-container" >
           {noblur? null:
           <div className="mask" style={{transform: `scale(${scaleNum})`}}>
