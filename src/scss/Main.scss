@@ -11,6 +11,12 @@ $bg:linear-gradient(180deg, #EBEDEE 0%, rgba(251, 251, 251, 0) 100%), #FFFFFF;
 li{
   list-style-type: none;
 }
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
 a{
   display: block;
   text-decoration: none;

@@ -5,6 +5,8 @@ import '../scss/components/Header.scss'
 import '../scss/pages/Navbar.scss'
 import '../scss/components/Nav.scss'
 import { isMobile } from 'react-device-detect'
+import { motion } from "framer-motion";
+
 
 function Header() {
   const [active,setActive]=useState(0)
@@ -38,7 +40,7 @@ function Header() {
       </header>
       {
         menu?
-      <section className="navbar-page">
+      <motion.section animate={{opacity: 1}} transition={{ duration: 0.4 }} className="navbar-page">
         <nav>
           {navItems.map((n,i) => (
             <Link onClick={closeMenu} to={navItems[i].linkTo} spy={true} smooth={true} offset={0} duration= {500}
@@ -47,9 +49,9 @@ function Header() {
           
         </nav>
         {isMobile? null:
-          <img className='menu__image'  src={navItems[active].imageUrl} alt=""/>
+          <motion.img className='menu__image' animate={{ x:50, opacity: 1}} transition={{ duration: 0.9 }} src={navItems[active].imageUrl} alt=""/>
         }
-      </section>
+      </motion.section>
       :
       null
     }

@@ -6,7 +6,7 @@
     width: 100%;
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     .text-block{
       padding: 200px 100px 0 100px;
       max-width: 600px;
@@ -15,6 +15,8 @@
       }
     }
     .image__item{
+      margin-left: -50px;
+      opacity: 0;
       height: 100vh;
       max-width:900px;
       object-fit:cover ;
@@ -28,16 +30,23 @@
       background: none;
       border:none;
       margin-right: 22px;
+      cursor: pointer;
+    }
+    .number:hover{
+      transition: all .5s;
+      opacity: 0.2;
     }
   }
 
 
   //fonts
   .slider__title{
+    opacity: 0;
     font-family: extendedbold;
     font-size: 24px;
   }
   .slider__text{
+    opacity: 0;
     font-family: widelight;
     font-size: 20px;
     margin-top: 22px;
@@ -112,7 +121,7 @@
   .slider-page{
     .slider-block{
       flex-direction: column-reverse;
-      justify-content: flex-end;
+      justify-content: flex-start;
       .image__item{
         height: auto;
         flex-grow: 1;

@@ -10,12 +10,15 @@
     justify-content: space-between;
     align-items: flex-end;
     .home__title{
+      filter: drop-shadow(0px 49px 100px #FFFFFF);
+      opacity: 0;
       margin-bottom: -35px;
       font-family: extendedbold;
       font-size: 146px;
       color:$dark;
     }
     .home-buttons{
+      opacity: 0;
       margin-left: 60px;
       display: flex;
       .home__button{
@@ -58,6 +61,7 @@
         margin-bottom: 0;
       }
       .home-buttons{
+        margin-left: -20px;
         flex-direction: column;
         width: 100%;
         .home__button{

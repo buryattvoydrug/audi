@@ -3,9 +3,9 @@
   font-family: extendedbold;
   font-size: 22px;
   color:$white;
+  transition: .6s all;
 }
 .nav__item:hover{
-  transition: .6 all;
   text-shadow: 0px 4px 25px rgba(255, 255, 255, 0.46);
   transform: scale(1.2);
 }

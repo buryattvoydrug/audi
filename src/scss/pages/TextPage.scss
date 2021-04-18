@@ -9,12 +9,14 @@
   flex-direction: column;
   justify-content: center;
   .text-page__title{
+    opacity: 0;
     font-family: extendedbold;
     font-size: 64px;
     width: 70%;
     color:$white;
   }
   .text-page__text{
+    opacity: 0;
     margin-top: 30px;
     font-family: widelight;
     font-size: 24px;
@@ -30,6 +32,7 @@
       font-size: 16px;
     }
     .text-page__title{
+      
       font-size: 32px;
     }
   }  
