@@ -5,8 +5,26 @@ import '../scss/components/Footer.scss'
 import '../scss/components/Nav.scss'
 
 function Footer() {
+  window.addEventListener('scroll', progressBar);
+
+  
+
+  function progressBar(e){
+    let windowHeight = document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    let windowScroll=document.body.scrollTop || document.documentElement.scrollTop;
+
+    let per = windowScroll/windowHeight*100;
+    const progress=document.querySelector('.row');
+    if(progress){
+      progress.style.width=per+'vw';
+    }
+
+
+
+  }
   return (
     <footer>
+    <div className="row"></div>
       <div className="footer-container">
       <Link to="exterior" spy={true} smooth={true} offset={0} duration= {500} className="nav__item">Экстерьер</Link>
       <Link to="interior" spy={true} smooth={true} offset={0} duration= {500} className="nav__item">Интерьер</Link>  

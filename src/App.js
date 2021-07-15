@@ -6,33 +6,62 @@ import Technic from "./components/pages/Technic";
 import {isMobile} from 'react-device-detect'
 import TextPage from "./components/pages/TextPage";
 import ConfigPage from "./components/pages/ConfigPage";
-
-function App() {
-
-  
+import React, { useEffect, useState } from "react";
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 
 
-  return (
-    <>
-      <Home/>
-      <ConfigPage />
-      <Parallax videoUrl={"/images/exterior.mp4"} type={'exterior'}
-      maskUrl={isMobile? "/images/iPhone 11 Pro Max - 2.png" : "/images/exterior.png"} />
-      <TextPage content={textPages} number={0}/>
-      <SliderPage items={exteriorItems} type={'right'}/>
-      <Parallax videoUrl={"/images/video.mp4"} type={'interior'}
-      maskUrl={isMobile? "/images/iPhone 11 Pro Max - 1.png" : "/images/design.png"} />
-      <TextPage content={textPages} number={1}/>
-      <SliderPage items={interiorItems} type={'left'}/>
-      <Parallax videoUrl={"/images/video.mp4"} noblur/>
-      <Technic id="technic" />
-      <SliderPage items={prefItems} type={'bottom'}/>
-      <Footer/>
-      
-    </>
-  );
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isLoading: true }
 }
+
+componentDidMount() {
+  setTimeout(() => {
+    this.setState({isLoading: false})
+      }, 1000);
+}
+
+  render() {
+    return (
+      <>{this.state.isLoading?
+        <div className="preloader">
+          <PropagateLoader size={30} color={"#ffffff"} loading={this.state.isLoading}/>
+        </div>:
+        <>
+        <Home/>
+        <ConfigPage />
+        <Parallax videoUrl={"/images/exterior.mp4"} type={'exterior'}
+        maskUrl={isMobile? "/images/iPhone 11 Pro Max - 2.png" : "/images/exterior.png"} />
+        <TextPage content={textPages} number={0}/>
+        <SliderPage items={exteriorItems} type={'right'}/>
+        <Parallax videoUrl={"/images/video.mp4"} type={'interior'}
+        maskUrl={isMobile? "/images/iPhone 11 Pro Max - 1.png" : "/images/design.png"} />
+        <TextPage content={textPages} number={1}/>
+        <SliderPage items={interiorItems} type={'left'}/>
+        <Parallax videoUrl={"/images/video.mp4"} noblur/>
+        <Technic id="technic" />
+        <SliderPage items={prefItems} type={'bottom'}/>
+        <Footer/>
+        </>}
+      </>
+    )
+  }
+}
+
+
+
+  // const [isLoading, setIsLoading] = useState(true);
+  // // useEffect(() => {
+  //   setIsLoading(true);
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 1000);
+  // },[])
+
+
+
 
 const exteriorItems =[
   { title:'Выразительные акценты',
@@ -81,4 +110,4 @@ const textPages=[
   },
 ]
 
-export default App;
+

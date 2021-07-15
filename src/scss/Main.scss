@@ -8,6 +8,17 @@ $bg:linear-gradient(180deg, #EBEDEE 0%, rgba(251, 251, 251, 0) 100%), #FFFFFF;
   padding: 0;
   box-sizing: border-box;
 }
+.preloader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #13272E;
+  width: 100vw;
+  height: 100vh;
+}
+::-webkit-scrollbar{
+  width: 0;
+}
 li{
   list-style-type: none;
 }
